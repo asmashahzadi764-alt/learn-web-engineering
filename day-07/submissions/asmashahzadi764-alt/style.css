@@ -1,1 +1,90 @@
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
 
+body{
+font-family: monospace;
+}
+
+.container{
+display: flex;
+}
+
+.container--column{
+flex-direction: column;
+}
+
+.container--row{
+flex-direction: row;
+}
+
+.container--wrap{
+flex-wrap: wrap;
+}
+
+.grow{
+flex-grow: 1;
+}
+
+.border{
+border: 1px solid black;
+}
+
+.border--red{
+border-color: red;
+}
+
+.border--blue{
+border-color: blue;
+}
+
+.border--green{
+border-color: green;
+}
+
+.dashboard{
+padding: 1em;
+gap: 1em;
+}
+
+.metrics{
+background: aliceblue;
+padding: 1em;
+gap: 1em;
+}
+
+.details{
+gap: 1em;
+padding: 1em;
+background: aliceblue;
+}
+
+.card{
+width: 300px;
+background: antiquewhite;
+padding: 1em;
+}
+
+.card__wrapper{
+display: flex;
+}
+
+.card__content{
+display: flex;
+flex-direction: column;
+}
+
+.card__title{
+font-size: 1.25em;
+}
+
+.card__value{
+font-size: 2em;
+}
+
+.card__icon{
+width: 32px;
+height: 32px;
+}
