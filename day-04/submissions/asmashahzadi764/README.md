@@ -1,4 +1,4 @@
-# Assignment 01: CSS Box Model & Display Property
+# CSS Box Model & Display Property
 
 ## Overview
 
