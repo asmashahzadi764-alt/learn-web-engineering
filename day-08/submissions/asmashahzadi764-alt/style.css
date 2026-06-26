@@ -1,1 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.border {
+    border: 2px solid black;
+}
+.border--blue {
+    border: 2px solid blue;
+}
+.border--red {
+    border: 2px solid red;
+}
+.border--green {
+    border: 2px solid green;
+}
 
+.flex--row{
+    display: flex ;
+    gap: .2em;
+
+}
+.flex--column{
+    display: flex ;
+    flex-direction: column;
+    gap: .2em;
+}
+header{
+    padding:.2em;
+    height: 20vh;
+    margin: 1em;
+    margin-bottom: .2em;
+    justify-content: space-between;
+}
+.header__items {
+    flex: 1;
+}
+nav{
+    width: 20%;
+    padding:.2em;
+     height: 70vh;
+     margin-left: 1em;
+}
+
+.nav__items,.cards,.card__item,.child{
+     flex:1
+}
+main{
+    width: 80%;
+    padding:.2em;
+    height: 70vh;
+    margin-right: 1em;
+}
+.content{
+    padding: 0;
+}
+div{
+     padding:.2em;
+}
+main .cards:last-child{
+    margin-bottom:2em;
+}
+main .cards:first-child {
+      flex: .5;
+}
+.first__card__item  {
+      flex: 4;
+}
+.card__item{
+    gap:0.1em;
+}
+.last__card__item{
+    align-items: flex-end;
+}
+.last__card__item :last-child{
+    flex: 2;
+    width: 100%;  
+}
+.last__card__item :first-child{
+    height:40%; 
+    width: 50%;
+}
+.card__item--primary {
+    flex: 2;
+}
+.first__nav__item{
+    flex: 6;
+}
