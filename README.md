@@ -2,7 +2,7 @@
 
 Welcome to my **Web Engineering Learning Journey** repository!
 
-This repository documents my daily learning progress, practical assignments, and coding exercises completed throughout the Web Engineering course. Every day focuses on a different web development topic, allowing me to strengthen my frontend development skills through hands-on practice.
+This repository documents my daily learning progress, practical assignments, and coding exercises completed throughout the Web Engineering course led by **[Instructor Shahzad](https://github.com/shaizCodes)**. Every day focuses on a different web development topic, allowing me to strengthen my frontend development skills through hands-on practice.
 
 The purpose of this repository is to:
 
@@ -52,6 +52,7 @@ learn-web-engineering/
 | Day 06 | Cards Layout with BEM | [README](./day-06/README.md) | [🌐 Live Demo](https://asmashahzadi764-alt.github.io/learn-web-engineering/day-06/submissions/asmashahzadi764-alt/) |
 | Day 07 | Mentorship Dashboard using Flexbox | [README](./day-07/README.md) | [🌐 Live Demo](https://asmashahzadi764-alt.github.io/learn-web-engineering/day-07/submissions/asmashahzadi764-alt/) |
 | Day 08 | Advanced Flexbox Layout | [README](./day-08/README.md) | [🌐 Live Demo](https://asmashahzadi764-alt.github.io/learn-web-engineering/day-08/submissions/asmashahzadi764-alt/) |
+
 ---
 
 ## 💻 Technologies Used
@@ -107,19 +108,24 @@ More lessons and assignments will be added as I continue my Web Engineering lear
 
 **Asma Shahzadi**
 
-GitHub Profile:
+GitHub: https://github.com/asmashahzadi764-alt
 
-https://github.com/asmashahzadi764-alt
+Repository: https://github.com/asmashahzadi764-alt/learn-web-engineering
 
-Repository:
+---
 
-https://github.com/asmashahzadi764-alt/learn-web-engineering
+# 🎓 Course Instructor
+
+**Shahzad**
+
+GitHub: https://github.com/shaizCodes
+
 
 ---
 
 # ⭐ About This Repository
 
-This repository serves as my personal learning portfolio, showcasing my daily progress, practical assignments, and implementation of modern frontend development concepts.
+This repository serves as my personal learning portfolio, showcasing my daily progress, practical assignments, and implementation of modern frontend development concepts under the guidance of **[Instructor Shahzad](https://github.com/shaizCodes)**.
 
 Each lesson builds upon the previous one, helping me develop a strong foundation in HTML, CSS, Flexbox, responsive layouts, and frontend best practices.
 
