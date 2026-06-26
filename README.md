@@ -1,40 +1,126 @@
-# Web Engineering Teaching Journey
+# Learn Web Engineering – My Learning Journey
 
-Welcome to my documentation of a volunteer teaching journey in Web Engineering! This repository is a living record of my day-to-day lessons, resources, and reflections as I guide learners through the fundamentals and advanced concepts of web development.
+Welcome to my **Web Engineering Learning Journey** repository!
 
-## About This Journey
+This repository documents my daily learning progress, practical assignments, and coding exercises completed throughout the Web Engineering course. Every day focuses on a different web development topic, allowing me to strengthen my frontend development skills through hands-on practice.
 
-Over the next 2-3 months (or longer), I will be teaching web engineering to a group of learners. Each day, I will document the lesson content, challenges, solutions, and additional resources. The aim is to create a transparent, reusable, and helpful resource for anyone interested in learning or teaching web engineering.
+The purpose of this repository is to:
 
-## How to Use This Repository
+- 📖 Document my daily learning journey.
+- 💻 Practice HTML, CSS, and modern web development concepts.
+- 🚀 Build a professional portfolio of assignments.
+- 📈 Track my progress throughout the course.
 
-- **Day-wise Documentation:** Each teaching day has its own folder with a README detailing the lesson, key concepts, code samples, challenges, and solutions.
-- **Resources:** Images, external links, and references to other files in this repository are included for a richer learning experience.
-- **Open Source:** Feel free to use, adapt, or contribute to these materials!
+---
 
-## Repository Structure
+# 🌐 Live Website
 
-```bash
-├── index.html                # Main HTML file (if used for demos)
-├── README.md                 # Root documentation (this file)
-├── day-01/                   # Day 01 lesson folder
-│   └── README.md             # Day 01 lesson details
-├── day-02/                   # Day 02 lesson folder (to be added)
-│   └── README.md             # Day 02 lesson details (to be added)
-... (and so on for each day)
+**GitHub Pages**
+
+👉 https://asmashahzadi764-alt.github.io/learn-web-engineering/
+
+---
+
+# 📂 Repository Structure
+
+```text
+learn-web-engineering/
+│
+├── README.md
+├── day-01/
+├── day-02/
+├── day-03/
+├── day-04/
+├── day-05/
+├── day-06/
+├── day-07/
+├── day-08/
+└── ...
 ```
 
 ---
 
-## Day-wise Lessons
+# 📚 Day-wise Lessons & Assignments
 
-- [Day 01](day-01/README.md): Internet, Web, Protocols, CORS, Auth, and HTTP Fundamentals
-- [Day 02](day-02/README.md): HTML, HyperText, Markup, DTD, and More
-- [Day 03](day-03/README.md): Introduction to CSS, Chrome DevTools, Block vs Inline Elements
-- [Day 04](day-04/README.md): CSS Box Model, Selectors, Chrome DevTools Sources tab
-- [Day 05](day-05/README.md): BEM, Emmet shortcuts, CSS Units and calc()
-- [Day 06](day-06/README.md): Accessibility in DevTools, Semantic vs Presentational Formatting
-- [Day 07](day-07/README.md): Flexbox Layouts and Card Components
-- [Day 08](day-08/README.md): Flexbox Layouts: `flex-wrap`, `flex-grow`, Navigation Bars and Headers
+| Day | Topic | Documentation | Live Assignment |
+|------|-------|---------------|-----------------|
+| Day 01 | Internet, Web, Protocols, CORS, Authentication & HTTP Fundamentals | [README](./day-01/README.md) | — |
+| Day 02 | HTML Fundamentals, HyperText, Markup & DTD | [README](./day-02/README.md) | — |
+| Day 03 | Introduction to CSS, Chrome DevTools & Block vs Inline Elements | [README](./day-03/README.md) | — |
+| Day 04 | CSS Box Model, CSS Selectors & Chrome DevTools | [README](./day-04/README.md) | [🌐 Live Demo](https://asmashahzadi764-alt.github.io/learn-web-engineering/day-04/submissions/asmashahzadi764/) |
+| Day 05 | CSS Units, BEM, Emmet & Responsive Layout | [README](./day-05/README.md) | [🌐 Live Demo](https://asmashahzadi764-alt.github.io/learn-web-engineering/day-05/submissions/asmashahzadi764/) |
+| Day 06 | Cards Layout with BEM | [README](./day-06/README.md) | [🌐 Live Demo](https://asmashahzadi764-alt.github.io/learn-web-engineering/day-06/submissions/asmashahzadi764-alt/) |
+| Day 07 | Mentorship Dashboard using Flexbox | [README](./day-07/README.md) | [🌐 Live Demo](https://asmashahzadi764-alt.github.io/learn-web-engineering/day-07/submissions/asmashahzadi764-alt/) |
+| Day 08 | Advanced Flexbox Layout | [README](./day-08/README.md) | [🌐 Live Demo](https://asmashahzadi764-alt.github.io/learn-web-engineering/day-08/submissions/asmashahzadi764-alt/) |
+---
 
-Stay tuned for daily updates!
+## 💻 Technologies Used
+
+<p align="left">
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" />
+  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" />
+  <img src="https://img.shields.io/badge/Flexbox-06B6D4?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/BEM-000000?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Chrome%20DevTools-4285F4?style=for-the-badge&logo=googlechrome&logoColor=white" />
+  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" />
+  <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" />
+  <img src="https://img.shields.io/badge/GitHub%20Pages-222222?style=for-the-badge&logo=githubpages&logoColor=white" />
+</p>
+
+---
+
+# 🎯 Skills Practiced
+
+Throughout this journey, I have practiced:
+
+- Semantic HTML5
+- CSS Selectors
+- CSS Box Model
+- Display Property
+- CSS Units (`px`, `%`, `em`, `rem`, `vh`, `vw`)
+- BEM Naming Convention
+- Emmet Shortcuts
+- CSS Flexbox
+- Responsive Layout Design
+- Chrome DevTools
+- Git & GitHub Workflow
+- GitHub Pages Deployment
+
+---
+
+# 📈 Progress
+
+- ✅ Day 01 Completed
+- ✅ Day 02 Completed
+- ✅ Day 03 Completed
+- ✅ Day 04 Completed
+- ✅ Day 05 Completed
+- ✅ Day 06 Completed
+- ✅ Day 07 Completed
+- ✅ Day 08 Completed
+
+More lessons and assignments will be added as I continue my Web Engineering learning journey.
+
+---
+
+# 👩‍💻 Author
+
+**Asma Shahzadi**
+
+GitHub Profile:
+
+https://github.com/asmashahzadi764-alt
+
+Repository:
+
+https://github.com/asmashahzadi764-alt/learn-web-engineering
+
+---
+
+# ⭐ About This Repository
+
+This repository serves as my personal learning portfolio, showcasing my daily progress, practical assignments, and implementation of modern frontend development concepts.
+
+Each lesson builds upon the previous one, helping me develop a strong foundation in HTML, CSS, Flexbox, responsive layouts, and frontend best practices.
+
+Thank you for visiting my repository! 😊
