@@ -1,207 +1,424 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Learn Web Engineering | Asma Shahzadi</title>
-<style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learn Web Engineering | Asma Shahzadi</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-body{
-    font-family:Arial, Helvetica, sans-serif;
-    background:#f5f7fb;
-    color:#333;
-}
+    body {
+      font-family: Arial, sans-serif;
+      background: #fff;
+      color: #1e293b;
+    }
 
-.container{
-    width:90%;
-    max-width:1100px;
-    margin:auto;
-}
+    /* NAV */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 16px 8%;
+      background: #fff;
+      border-bottom: 1px solid #e2e8f0;
+      position: sticky;
+      top: 0;
+    }
 
-/* Hero */
+    nav h3 {
+      color: #1d4ed8;
+      font-size: 17px;
+    }
 
-header{
-    text-align:center;
-    padding:60px 20px;
-}
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 24px;
+    }
 
-header h1{
-    font-size:42px;
-    color:#2563eb;
-    margin-bottom:15px;
-}
+    nav a {
+      text-decoration: none;
+      color: #475569;
+      font-size: 14px;
+      font-weight: bold;
+    }
 
-header p{
-    color:#555;
-    line-height:1.7;
-}
+    /* HERO */
+    .hero {
+      padding: 72px 8% 64px;
+      text-align: center;
+      background: linear-gradient(135deg, #1e3a8a, #2563eb, #3b82f6);
+      color: #fff;
+    }
 
-.author{
-    margin-top:20px;
-    font-weight:bold;
-}
+    .hero-tag {
+      display: inline-block;
+      background: rgba(255, 255, 255, 0.15);
+      color: #bfdbfe;
+      font-size: 12px;
+      font-weight: bold;
+      padding: 5px 14px;
+      border-radius: 20px;
+      margin-bottom: 18px;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
 
-/* About */
+    .hero h1 {
+      font-size: 40px;
+      margin-bottom: 14px;
+    }
 
-.about{
-    background:#fff;
-    padding:30px;
-    border-radius:10px;
-    box-shadow:0 5px 12px rgba(0,0,0,.08);
-    margin-bottom:40px;
-}
+    .hero p {
+      margin: 0 auto;
+      max-width: 560px;
+      line-height: 1.8;
+      font-size: 15px;
+      color: #bfdbfe;
+    }
 
-.about h2{
-    color:#2563eb;
-    margin-bottom:15px;
-}
+    .btns {
+      margin-top: 28px;
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
 
-/* Cards */
+    .btn {
+      padding: 11px 22px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: bold;
+    }
 
-.section-title{
-    text-align:center;
-    color:#2563eb;
-    margin-bottom:30px;
-}
+    .btn-white {
+      background: #fff;
+      color: #1d4ed8;
+    }
 
-.cards{
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:center;
-    gap:20px;
-}
+    .btn-outline {
+      background: transparent;
+      color: #fff;
+      border: 1.5px solid rgba(255, 255, 255, 0.4);
+    }
 
-.card{
-    width:240px;
-    background:#fff;
-    border-radius:10px;
-    box-shadow:0 5px 12px rgba(0,0,0,.08);
-    padding:25px;
-    text-align:center;
-}
+    /* CONTAINER */
+    .container {
+      width: 90%;
+      max-width: 1060px;
+      margin: 0 auto;
+    }
 
-.card h3{
-    color:#2563eb;
-    margin-bottom:10px;
-}
+    /* SECTIONS */
+    .section {
+      padding: 52px 0;
+      border-bottom: 1px solid #f1f5f9;
+    }
 
-.card p{
-    color:#666;
-    margin-bottom:20px;
-    min-height:45px;
-}
+    .section:last-child {
+      border-bottom: none;
+    }
 
-.button{
-    display:inline-block;
-    text-decoration:none;
-    background:#2563eb;
-    color:white;
-    padding:10px 18px;
-    border-radius:6px;
-}
+    .section h2 {
+      color: #1e293b;
+      font-size: 20px;
+      margin-bottom: 10px;
+      text-align: center;
+    }
 
-.button:hover{
-    background:#1d4ed8;
-}
+    .section p.sub {
+      text-align: center;
+      color: #64748b;
+      font-size: 14px;
+      margin-bottom: 24px;
+      line-height: 1.7;
+    }
 
-footer{
-    margin-top:60px;
-    text-align:center;
-    padding:30px;
-}
+    .about-text {
+      max-width: 600px;
+      margin: 0 auto;
+      text-align: center;
+      color: #475569;
+      font-size: 15px;
+      line-height: 1.8;
+    }
 
-.repo{
-    text-decoration:none;
-    color:#2563eb;
-    font-weight:bold;
-}
+    /* BADGES */
+    .badges {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
 
-</style>
+    .badges span {
+      padding: 7px 16px;
+      border-radius: 20px;
+      font-size: 13px;
+      font-weight: bold;
+      border: 1px solid;
+    }
 
+    .b-blue {
+      background: #eff6ff;
+      color: #1d4ed8;
+      border-color: #dbeafe;
+    }
+
+    .b-purple {
+      background: #f5f3ff;
+      color: #6d28d9;
+      border-color: #ede9fe;
+    }
+
+    .b-green {
+      background: #f0fdf4;
+      color: #15803d;
+      border-color: #dcfce7;
+    }
+
+    .b-orange {
+      background: #fff7ed;
+      color: #c2410c;
+      border-color: #fed7aa;
+    }
+
+    /* CARDS */
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 16px;
+    }
+
+    .card {
+      width: 188px;
+      padding: 22px 16px;
+      border-radius: 10px;
+      text-align: center;
+      border: 1px solid #e2e8f0;
+    }
+
+    .card-day {
+      font-size: 11px;
+      font-weight: bold;
+      color: #6366f1;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+      margin-bottom: 6px;
+    }
+
+    .card h3 {
+      color: #1e3a8a;
+      font-size: 15px;
+      margin-bottom: 6px;
+    }
+
+    .card p {
+      font-size: 12px;
+      color: #64748b;
+      min-height: 32px;
+      margin-bottom: 12px;
+      line-height: 1.5;
+    }
+
+    .card-skill {
+      font-size: 11px;
+      color: #6366f1;
+      background: #eef2ff;
+      padding: 3px 10px;
+      border-radius: 10px;
+      display: inline-block;
+      margin-bottom: 14px;
+    }
+
+    .card a {
+      display: block;
+      background: #1d4ed8;
+      color: #fff;
+      text-decoration: none;
+      padding: 8px;
+      border-radius: 7px;
+      font-size: 13px;
+      font-weight: bold;
+    }
+
+    /* FOOTER */
+    footer {
+      padding: 28px 8%;
+      background: #f8f9fc;
+      border-top: 1px solid #e2e8f0;
+      color: #64748b;
+      font-size: 13px;
+    }
+
+    .footer-inner {
+      max-width: 1060px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .footer-inner strong {
+      color: #1e293b;
+      font-size: 14px;
+      display: block;
+      margin-bottom: 3px;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 20px;
+    }
+
+    .footer-links a {
+      color: #64748b;
+      text-decoration: none;
+      font-size: 13px;
+    }
+  </style>
 </head>
-
 <body>
 
-<header class="container">
+  <nav>
+    <h3>Asma Shahzadi</h3>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#assignments">Assignments</a></li>
+      <li><a href="https://github.com/asmashahzadi764-alt/learn-web-engineering">GitHub</a></li>
+    </ul>
+  </nav>
 
-<h1>Learn Web Engineering</h1>
+  <section class="hero">
+    <div class="hero-tag">Web Engineering Journey</div>
+    <h1>Building the Web,<br>One Day at a Time</h1>
+    <p>Hands-on practice with HTML, CSS, BEM and Flexbox — real assignments, real output, real progress.</p>
+    <div class="btns">
+      <a class="btn btn-white" href="#assignments">View Assignments</a>
+      <a class="btn btn-outline" href="https://github.com/asmashahzadi764-alt/learn-web-engineering">GitHub Repo</a>
+    </div>
+  </section>
 
-<p>My Learning Journey</p>
+  <div class="container">
 
-<p>HTML • CSS • Flexbox • BEM</p>
+    <div class="section" id="about">
+      <h2>About This Repository</h2>
+      <p class="sub">What's inside and why it exists</p>
+      <p class="about-text">This is my personal learning log for Web Engineering. Every folder is a day, every file is a lesson. I'm practicing by building — layouts, components, dashboards — and pushing everything live so I can actually see it work in a browser.</p>
+    </div>
 
-<p class="author">Created by <strong>Asma Shahzadi</strong></p>
+    <div class="section">
+      <h2>Skills Being Practiced</h2>
+      <p class="sub">Technologies I'm actively working with in this course</p>
+      <div class="badges">
+        <span class="b-blue">HTML5</span>
+        <span class="b-blue">CSS3</span>
+        <span class="b-purple">Flexbox</span>
+        <span class="b-purple">BEM Methodology</span>
+        <span class="b-green">GitHub Pages</span>
+        <span class="b-orange">Responsive Design</span>
+      </div>
+    </div>
 
-</header>
+    <div class="section" id="assignments">
+      <h2>Live Assignments</h2>
+      <p class="sub">Each one deployed on GitHub Pages — click to view</p>
+      <div class="cards">
 
-<div class="container">
+        <div class="card">
+          <div class="card-day">Day 01</div>
+          <h3>Web Fundamentals</h3>
+          <p>Internet, Protocols, CORS, Authentication & HTTP</p>
+          <div class="card-skill">Theory</div>
+          <a href="https://github.com/asmashahzadi764-alt/learn-web-engineering/blob/master/day-01/README.md">README</a>
+        </div>
 
-<section class="about">
+        <div class="card">
+          <div class="card-day">Day 02</div>
+          <h3>HTML Fundamentals</h3>
+          <p>HyperText, Markup & DTD</p>
+          <div class="card-skill">HTML</div>
+          <a href="https://github.com/asmashahzadi764-alt/learn-web-engineering/blob/master/day-02/README.md">README</a>
+        </div>
 
-<h2>About This Repository</h2>
+        <div class="card">
+          <div class="card-day">Day 03</div>
+          <h3>Intro to CSS</h3>
+          <p>Chrome DevTools & Block vs Inline Elements</p>
+          <div class="card-skill">CSS Basics</div>
+          <a href="https://github.com/asmashahzadi764-alt/learn-web-engineering/blob/master/day-03/README.md">README</a>
+        </div>
 
-<p>
-This repository contains my Web Engineering learning journey, including
-daily practice, assignments, and projects completed during the course.
-Each assignment is available through GitHub Pages for easy access.
-</p>
+        <div class="card">
+          <div class="card-day">Day 04</div>
+          <h3>Box Model</h3>
+          <p>CSS Box Model, Selectors & Chrome DevTools</p>
+          <div class="card-skill">CSS Basics</div>
+          <a href="https://github.com/asmashahzadi764-alt/learn-web-engineering/blob/master/day-04/README.md">README</a>
+          <a href="https://asmashahzadi764-alt.github.io/learn-web-engineering/day-04/submissions/asmashahzadi764/" style="margin-top:8px;background:#6366f1;">View Live</a>
+        </div>
 
-</section>
+        <div class="card">
+          <div class="card-day">Day 05</div>
+          <h3>CSS Units</h3>
+          <p>CSS Units, BEM, Emmet & Responsive Layout</p>
+          <div class="card-skill">CSS Units</div>
+          <a href="https://github.com/asmashahzadi764-alt/learn-web-engineering/blob/master/day-05/README.md">README</a>
+          <a href="https://asmashahzadi764-alt.github.io/learn-web-engineering/day-05/submissions/asmashahzadi764/" style="margin-top:8px;background:#6366f1;">View Live</a>
+        </div>
 
-<h2 class="section-title">Live Assignments</h2>
+        <div class="card">
+          <div class="card-day">Day 06</div>
+          <h3>BEM Cards</h3>
+          <p>Cards Layout with BEM</p>
+          <div class="card-skill">BEM</div>
+          <a href="https://github.com/asmashahzadi764-alt/learn-web-engineering/blob/master/day-06/README.md">README</a>
+          <a href="https://asmashahzadi764-alt.github.io/learn-web-engineering/day-06/submissions/asmashahzadi764-alt/" style="margin-top:8px;background:#6366f1;">View Live</a>
+        </div>
 
-<div class="cards">
+        <div class="card">
+          <div class="card-day">Day 07</div>
+          <h3>Dashboard</h3>
+          <p>Mentorship Dashboard using Flexbox</p>
+          <div class="card-skill">Layout</div>
+          <a href="https://github.com/asmashahzadi764-alt/learn-web-engineering/blob/master/day-07/README.md">README</a>
+          <a href="https://asmashahzadi764-alt.github.io/learn-web-engineering/day-07/submissions/asmashahzadi764-alt/" style="margin-top:8px;background:#6366f1;">View Live</a>
+        </div>
 
-<div class="card">
-<h3>Day 04</h3>
-<p>CSS Box Model & Display Property</p>
-<a class="button" href="https://asmashahzadi764-alt.github.io/learn-web-engineering/day-04/submissions/asmashahzadi764/">View Live</a>
-</div>
+        <div class="card">
+          <div class="card-day">Day 08</div>
+          <h3>Flexbox</h3>
+          <p>Advanced Flexbox Layout</p>
+          <div class="card-skill">Flexbox</div>
+          <a href="https://github.com/asmashahzadi764-alt/learn-web-engineering/blob/master/day-08/README.md">README</a>
+          <a href="https://asmashahzadi764-alt.github.io/learn-web-engineering/day-08/submissions/asmashahzadi764-alt/" style="margin-top:8px;background:#6366f1;">View Live</a>
+        </div>
 
-<div class="card">
-<h3>Day 05</h3>
-<p>CSS Units & Layout</p>
-<a class="button" href="https://asmashahzadi764-alt.github.io/learn-web-engineering/day-05/submissions/asmashahzadi764/">View Live</a>
-</div>
+      </div>
+    </div>
 
-<div class="card">
-<h3>Day 06</h3>
-<p>Cards Layout with BEM</p>
-<a class="button" href="https://asmashahzadi764-alt.github.io/learn-web-engineering/day-06/submissions/asmashahzadi764-alt/">View Live</a>
-</div>
+  </div>
 
-<div class="card">
-<h3>Day 07</h3>
-<p>Mentorship Dashboard</p>
-<a class="button" href="https://asmashahzadi764-alt.github.io/learn-web-engineering/day-07/submissions/asmashahzadi764-alt/">View Live</a>
-</div>
-
-<div class="card">
-<h3>Day 08</h3>
-<p>Advanced Flexbox Layout</p>
-<a class="button" href="https://asmashahzadi764-alt.github.io/learn-web-engineering/day-08/submissions/asmashahzadi764-alt/">View Live</a>
-</div>
-
-</div>
-
-<footer>
-
-<p><strong>GitHub Repository</strong></p>
-<br>
-
-<a class="repo"
-href="https://github.com/asmashahzadi764-alt/learn-web-engineering">
-learn-web-engineering
-</a>
-
-</footer>
-
-</div>
+  <footer>
+    <div class="footer-inner">
+      <div>
+        <strong>Asma Shahzadi</strong>
+        BS Information Technology · Women University Multan
+      </div>
+      <div class="footer-links">
+        <a href="https://github.com/asmashahzadi764-alt">GitHub</a>
+        <a href="https://linkedin.com/in/asma-shahzadi-313291376">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
 
 </body>
 </html>
