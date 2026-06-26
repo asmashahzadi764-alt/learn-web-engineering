@@ -12,7 +12,7 @@ The webpage contains two card sections with different layouts while maintaining 
 
 🔗 **Live Website**
 
-https://asmashahzadi764-alt.github.io/learn-web-engineering/day-06/submissions/asmashahzadi764/
+[https://asmashahzadi764-alt.github.io/learn-web-engineering/day-06/submissions/asmashahzadi764/](https://asmashahzadi764-alt.github.io/learn-web-engineering/day-06/submissions/asmashahzadi764-alt/)
 
 ---
 
